@@ -1,0 +1,7 @@
+{
+  "name": "tennisguide",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
