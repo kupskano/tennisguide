@@ -1,3 +1,65 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+
+  <ion-app>
+    <ion-menu menuId="main-menu" content-id="main">
+  
+  
+  
+      <ion-content>
+        <div class="menu-header-bg"> </div>
+        <div class="header-content">
+         <img src="assets/icon/iicon.png" alt="">
+         <ion-label>
+          <h2>TENNIS GUIDE</h2>
+          <p></p>
+        </ion-label>
+        </div>
+        <div class="action-button">
+            <ion-button  disabled>
+              <ion-icon name="tennisball-outline"></ion-icon>TENNIS GUIDE MENU
+            </ion-button>
+        </div>
+  
+          <ion-list class="menu-items" lines="none">
+
+            <ion-menu-toggle>
+              <ion-item routerLink="/home">
+                <ion-icon name="tennisball-outline"></ion-icon>Home
+              </ion-item>
+            </ion-menu-toggle>
+
+            <ion-menu-toggle>
+              <ion-item routerLink="/racquet">
+                <ion-icon name="tennisball-outline"></ion-icon>Tennis Racquet
+              </ion-item>
+            </ion-menu-toggle>
+  
+            <ion-menu-toggle>
+              <ion-item routerLink="/strings">
+                <ion-icon name="tennisball-outline"></ion-icon>Tennis Strings
+              </ion-item>
+            </ion-menu-toggle>
+
+            <ion-menu-toggle>
+              <ion-item routerLink="/accessories">
+                <ion-icon name="tennisball-outline"></ion-icon>Tennis Accessories
+              </ion-item>
+            </ion-menu-toggle>
+
+            <ion-menu-toggle>
+              <ion-item routerLink="/court">
+                <ion-icon name="tennisball-outline"></ion-icon>Tennis Court
+              </ion-item>
+            </ion-menu-toggle>
+
+            <ion-menu-toggle>
+              <ion-item routerLink="/etiquette">
+                <ion-icon name="tennisball-outline"></ion-icon>Tennis Etiquette
+              </ion-item>
+            </ion-menu-toggle>
+
+          </ion-list>
+      </ion-content>
+    </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

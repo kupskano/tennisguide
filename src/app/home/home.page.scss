@@ -1,27 +1,100 @@
-#container {
-  text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+
+.first-card {
+    height: 160px;
+    // width: 10;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+
+.second-card {
+    height: 80px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
 
-  color: #8c8c8c;
 
-  margin: 0;
+ion-toolbar {
+    // border-bottom-right-radius: 100px;
+    // border-bottom-left-radius: 100px;
+    // padding-bottom: 90px;
+    --background: #f0f8ff;
+    --background: linear-gradient(90deg, #f0f8ff 0%, #4d71d7 100%);
+    // --background: #f0f8ff;
 }
 
-#container a {
-  text-decoration: none;
+ion-content {
+    // --background: #f0f8ff; 
+    --background: #f0f8ff;
+    --background: linear-gradient(90deg, #f0f8ff 0%, #4d71d7 100%);
 }
+
+ion-menu-button {
+    --color: #ffffff;
+}
+
+ion-title {
+    color: #ffffff;
+}
+
+ion-card {
+    --background: #f0f8ff;
+}
+
+// ion-button {
+//     --background: #f0f8ff;
+//     float: right;
+//     color: #ffffff;
+// }
+// .icontonicard {
+//     color: #ffffff;
+// }
+
+
+.card {
+    margin: 0;
+    margin-right: 50px;
+    width: 80%;
+    box-shadow: none;
+    border-radius: 14px;
+  }
+  
+
+ion-card-content {
+    .img-wrapper {
+      border-radius: 14px;
+      height: 200px;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+  
+    ion-icon {
+      color: #f2994a;
+      padding-right: 4px;
+    }
+  
+    ion-card-subtitle:last-of-type {
+      padding-top:6px;
+    }
+  
+  }
+
+
+.shake {
+    animation: shake-animation 4.72s ease infinite;
+    transform-origin: 50% 50%;
+  }
+  .element {
+    margin: 0 auto;
+    width: auto;
+    // background: red;
+  }
+  @keyframes shake-animation {
+     0% { transform:translate(0,0) }
+    1.78571% { transform:translate(5px,0) }
+    3.57143% { transform:translate(0,0) }
+    5.35714% { transform:translate(5px,0) }
+    7.14286% { transform:translate(0,0) }
+    8.92857% { transform:translate(5px,0) }
+    10.71429% { transform:translate(0,0) }
+    100% { transform:translate(0,0) }
+  }
+
